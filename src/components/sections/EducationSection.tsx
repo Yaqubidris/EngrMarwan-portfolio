@@ -33,7 +33,7 @@ const educationItems: EducationItem[] = [
     degree: "M.Sc. in Structural Engineering",
     detail:
       "Advanced specialization in structural systems, technical rigor, and engineering precision.",
-    imageSrc: "/images/education/abu.jpg",
+    imageSrc: "/images/education/ABU.jpg",
     imageAlt: "Ahmadu Bello University Zaria campus",
   },
 ];
