@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #0b1f3a;
+  --color-background: #f8fafc;
+  --color-text: #1e293b;
+  --color-accent: #c8a95b;
+  --color-accent-2: #1f7a63;
+  --font-body: var(--font-inter);
+  --font-heading: var(--font-playfair-display);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-[1180px] scroll-mt-24 px-6 py-14 md:px-10 md:py-16;
+  }
+
+  .section-heading {
+    @apply text-primary text-3xl leading-[1.12] md:text-[2.35rem];
+  }
+
+  .section-kicker {
+    @apply text-accent text-[11px] font-semibold uppercase tracking-[0.16em];
+  }
+
+  .section-copy {
+    @apply text-text/82 mt-4 max-w-3xl text-base leading-8;
+  }
+
+  .premium-card {
+    @apply rounded-2xl bg-white p-6 ring-1 ring-black/6 shadow-[0_10px_30px_rgba(11,31,58,0.08)];
+  }
+
+  .executive-button {
+    @apply inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-primary/90;
+  }
+
+  .data-block {
+    @apply rounded-xl bg-background p-5 ring-1 ring-primary/10;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}

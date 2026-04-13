@@ -1,0 +1,334 @@
+{
+  "profile": {
+    "name": "Marwan Ahmad",
+    "honorific": "Engr.",
+    "role": "Commissioner for Works and Housing, Kano State",
+    "location": "Kano State, Nigeria",
+    "appointed_year": 2023
+  },
+  "hero": {
+    "headline": "Infrastructure Systems. Engineered for Performance.",
+    "subheadline": "A civil engineer and public-sector leader advancing road infrastructure, housing development, and institutional delivery systems in Kano State.",
+    "positioning_line": "Infrastructure Technocrat. Structural Engineer. Public Sector Leader.",
+    "portrait": {
+      "url": "/images/marwan-portrait.jpg",
+      "alt": "Official portrait of Engr. Marwan Ahmad"
+    },
+    "stats": [
+      {
+        "label": "Appointed",
+        "value": "2023"
+      },
+      {
+        "label": "Credentials",
+        "value": "COREN Registered, NSE Member"
+      },
+      {
+        "label": "Specialization",
+        "value": "Civil & Structural Engineering"
+      }
+    ]
+  },
+  "sections": {
+    "executive_summary": {
+      "id": "executive-summary",
+      "title": "Executive Summary",
+      "summary": "Engr. Marwan Ahmad is a civil engineer and public infrastructure leader serving as Commissioner for Works and Housing in Kano State. His work is centered on strengthening the planning, delivery, and long-term performance of road and housing infrastructure systems.\n\nWith experience spanning federal engineering operations, private-sector consulting, and government advisory roles, he brings a structured, execution-focused approach to public works. His leadership emphasizes engineering discipline, project accountability, and the integration of technical standards into governance processes.\n\nSince his appointment in 2023, the ministry's focus has included rehabilitation of critical road networks, expansion of housing infrastructure, and the improvement of project oversight mechanisms to enhance delivery efficiency and public value.",
+      "points": [
+        "B.Eng Civil Engineering, Bayero University Kano",
+        "M.Sc Structural Engineering, Ahmadu Bello University",
+        "Former Project Engineer, Federal Ministry of Works",
+        "Former Managing Director, M. Ahmad Consults Ltd"
+      ]
+    },
+    "biography": {
+      "id": "biography",
+      "title": "Biography & Professional Journey",
+      "summary": "From technical engineering practice to cabinet-level public service, Engr. Marwan Ahmad's career reflects progressive responsibility across project delivery, advisory strategy, and institutional leadership.",
+      "points": [
+        "Project Engineer, Federal Ministry of Works, with exposure to standards-based public infrastructure execution",
+        "Managing Director, M. Ahmad Consults Ltd, leading private-sector engineering and delivery advisory services",
+        "Technical Adviser on Roads & Bridges to Kano State Government, supporting policy-to-project alignment",
+        "Infrastructure policy consultant on development-related projects with cross-sector implementation focus",
+        "Appointed Commissioner for Works and Housing in 2023 to oversee strategic roads and housing delivery"
+      ]
+    },
+    "leadership": {
+      "id": "leadership",
+      "title": "Leadership Profile",
+      "summary": "His leadership approach is systems-oriented and performance-driven, with emphasis on engineering standards, accountable delivery, and institutional resilience.",
+      "leadership_thesis": "Engineering discipline, execution accountability, and institutional strengthening define his leadership approach to public infrastructure delivery.",
+      "points": [
+        "Establish clear technical baselines before procurement and execution",
+        "Embed accountability checkpoints across planning, delivery, and handover",
+        "Strengthen institutions through systems, standards, and performance monitoring"
+      ],
+      "quotes": [
+        {
+          "text": "Public infrastructure must be delivered with engineering rigor and public accountability.",
+          "context": "State infrastructure briefing",
+          "date": "2025-09-03"
+        }
+      ]
+    },
+    "vision": {
+      "id": "vision",
+      "title": "Vision for Infrastructure & Housing",
+      "summary": "A resilient and inclusive infrastructure ecosystem that supports mobility, housing access, and long-term economic competitiveness.",
+      "points": [
+        "Scale resilient road and bridge rehabilitation",
+        "Expand serviced housing growth corridors",
+        "Modernize delivery systems for transparency"
+      ]
+    },
+    "contact": {
+      "id": "contact",
+      "title": "Closing / Contact",
+      "summary": "Partnerships are welcome with institutions aligned to durable and measurable infrastructure impact.",
+      "points": [
+        "Institutional partnerships",
+        "Technical collaboration",
+        "Policy and advisory dialogue"
+      ],
+      "email": "commissioner.works.housing@kanostate.gov.ng",
+      "phone": "+234 (0) 803 000 0000",
+      "office": "Office of the Commissioner for Works and Housing, Kano State"
+    }
+  },
+  "projects": [
+    {
+      "id": "metro-arterial-roads",
+      "name": "Metropolitan Arterial Roads Rehabilitation Program",
+      "location": "Kano Metropolitan Area",
+      "scope": "Rehabilitation and widening of priority corridors with drainage and safety upgrades.",
+      "status": "In Progress",
+      "impact": "Improved intra-city mobility and access to commercial activity zones.",
+      "images": [
+        {
+          "url": "/images/projects/featured-project.jpg",
+          "caption": "Road reconstruction phase"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Road length rehabilitated",
+          "value": 68,
+          "unit": "km",
+          "verification_status": "unverified_estimate",
+          "source_type": "internal_progress_brief",
+          "confidence_note": "Pending independent engineering audit."
+        }
+      ]
+    },
+    {
+      "id": "priority-bridges",
+      "name": "State Priority Bridges (Dan-agundi Interchange)",
+      "location": "Gwale LGA, Kano State",
+      "scope": "Structural reinforcement, deck repairs, and hydraulic protection works.",
+      "status": "Ongoing",
+      "impact": "Improved safety and all-season logistics connectivity.",
+      "images": [
+        {
+          "url": "/images/projects/project-01.jpg",
+          "caption": "Bridge reinforcement operations"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Bridges fully rehabilitated",
+          "value": 13,
+          "unit": "structures",
+          "verification_status": "partially_verified",
+          "source_type": "program_management_dashboard",
+          "confidence_note": "Final count under district-level reconciliation."
+        }
+      ]
+    },
+    {
+      "id": "regional-housing-estates",
+      "name": "Regional Housing Estates Enablement Program",
+      "location": "Kano North & Central Zones",
+      "scope": "Site servicing works including access roads, drainage channels, and utility corridor preparation for new housing clusters.",
+      "status": "In Progress",
+      "impact": "Expanded housing delivery readiness and improved infrastructure access for emerging residential corridors.",
+      "images": [
+        {
+          "url": "/images/projects/project-04.jpg",
+          "caption": "Estate servicing and access preparation"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Serviced estate zones",
+          "value": 6,
+          "unit": "sites",
+          "verification_status": "partially_verified",
+          "source_type": "estate_delivery_tracker",
+          "confidence_note": "Pending final utility-connection confirmation for one site."
+        }
+      ]
+    },
+    {
+      "id": "drainage-resilience-corridors",
+      "name": "Urban Drainage Resilience Corridors",
+      "location": "Flood-Prone Metropolitan Districts",
+      "scope": "Rehabilitation of trunk drainage alignments and integration with corridor road rehabilitation packages.",
+      "status": "Ongoing",
+      "impact": "Reduced seasonal flooding pressure and protected critical transport links.",
+      "images": [
+        {
+          "url": "/images/projects/project-03.jpg",
+          "caption": "Drainage rehabilitation along major route"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Drainage corridors upgraded",
+          "value": 24,
+          "unit": "km",
+          "verification_status": "unverified_estimate",
+          "source_type": "field_progress_returns",
+          "confidence_note": "Under reconciliation with district-level engineer submissions."
+        }
+      ]
+    },
+    {
+      "id": "interchange-upgrade-package",
+      "name": "Strategic Interchange Upgrade Package",
+      "location": "Kano Metropolitan Gateways",
+      "scope": "Junction redesign, pavement strengthening, and traffic-flow channelization at high-volume interchange points.",
+      "status": "Phase I Complete",
+      "impact": "Improved network throughput at major urban junctions and reduced peak-hour bottlenecks.",
+      "images": [
+        {
+          "url": "/images/projects/project-02.jpg",
+          "caption": "Interchange lane optimization and pavement upgrades"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Interchanges optimized",
+          "value": 4,
+          "unit": "junctions",
+          "verification_status": "verified",
+          "source_type": "completion_certificate_records",
+          "confidence_note": "Verified through signed completion records."
+        }
+      ]
+    },
+    {
+      "id": "rural-access-links",
+      "name": "Rural Access Link Rehabilitation",
+      "location": "Selected Agricultural LGAs",
+      "scope": "Targeted rehabilitation of feeder links connecting farm production areas to market corridors.",
+      "status": "In Progress",
+      "impact": "Enhanced market access reliability and reduced transport stress for agricultural producers.",
+      "images": [
+        {
+          "url": "/images/projects/project-05.jpg",
+          "caption": "Rehabilitated feeder road segment in rural district"
+        }
+      ],
+      "metrics": [
+        {
+          "name": "Feeder links rehabilitated",
+          "value": 42,
+          "unit": "km",
+          "verification_status": "partially_verified",
+          "source_type": "program_monitoring_log",
+          "confidence_note": "Independent verification of final 8 km is pending."
+        }
+      ]
+    }
+  ],
+  "kpis": [
+    {
+      "id": "kpi-road",
+      "label": "Roads Rehabilitated",
+      "value": "68 km",
+      "trend": "up",
+      "verification_status": "unverified_estimate",
+      "source_type": "internal_progress_brief",
+      "confidence_note": "Portfolio-level estimate, pending external validation."
+    },
+    {
+      "id": "kpi-bridges",
+      "label": "Bridges Rehabilitated",
+      "value": "13",
+      "trend": "up",
+      "verification_status": "partially_verified",
+      "source_type": "program_management_dashboard",
+      "confidence_note": "Cross-checking underway."
+    },
+    {
+      "id": "kpi-housing",
+      "label": "Serviced Housing Plots",
+      "value": "3,200",
+      "trend": "up",
+      "verification_status": "partially_verified",
+      "source_type": "allocation_and_site_records",
+      "confidence_note": "Phase 2 figure is provisional."
+    }
+  ],
+  "media_mentions": [
+    {
+      "title": "Kano Expands Road Rehabilitation Under Commissioner Ahmad",
+      "publisher": "Daily Trust (Placeholder)",
+      "date": "2025-06-12",
+      "type": "News Article"
+    },
+    {
+      "title": "Policy Dialogue on Infrastructure Delivery in Northern Nigeria",
+      "publisher": "Channels TV (Placeholder)",
+      "date": "2024-11-05",
+      "type": "TV Interview"
+    }
+  ],
+  "priorities": [
+    {
+      "id": "priority-1",
+      "title": "Road Network Rehabilitation",
+      "description": "Prioritize high-impact corridors to reduce travel time and logistics costs."
+    },
+    {
+      "id": "priority-2",
+      "title": "Housing Enablement",
+      "description": "Scale serviced plots and utility-ready housing growth zones."
+    },
+    {
+      "id": "priority-3",
+      "title": "Project Quality & Governance",
+      "description": "Institutionalize QA/QC and transparent delivery tracking."
+    }
+  ],
+  "modernization_opportunities": [
+    {
+      "id": "mod-1",
+      "title": "Project Tracking Systems",
+      "description": "Structured milestone tracking with geo-tagged field evidence and standardized progress controls.",
+      "expected_benefit": "Improves delivery predictability and early issue identification across active infrastructure projects.",
+      "priority": "high"
+    },
+    {
+      "id": "mod-2",
+      "title": "Executive Dashboard Capability",
+      "description": "Portfolio-level dashboard views for schedule, budget, and quality oversight at executive decision points.",
+      "expected_benefit": "Supports evidence-based leadership review and faster cross-program coordination.",
+      "priority": "high"
+    },
+    {
+      "id": "mod-3",
+      "title": "Digital Documentation Framework",
+      "description": "Digitized documentation lifecycle for designs, approvals, site instructions, and completion records.",
+      "expected_benefit": "Strengthens institutional memory, compliance confidence, and continuity across project teams.",
+      "priority": "medium"
+    },
+    {
+      "id": "mod-4",
+      "title": "Transparency and Public Reporting Systems",
+      "description": "Structured disclosure workflows for selected project milestones, outputs, and accountability indicators.",
+      "expected_benefit": "Enhances public trust through clear, timely, and auditable communication of delivery progress.",
+      "priority": "medium"
+    }
+  ]
+}
