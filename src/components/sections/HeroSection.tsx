@@ -7,7 +7,7 @@ type HeroSectionProps = {
   disableAnimation?: boolean;
 };
 
-const PORTRAIT_IMAGE = "/images/hero/marwan-portrait.png";
+const PORTRAIT_IMAGE = "/images/hero/hero-1.jpg";
 
 export function HeroSection({ disableAnimation = false }: HeroSectionProps) {
   const reduceMotion = useReducedMotion();
