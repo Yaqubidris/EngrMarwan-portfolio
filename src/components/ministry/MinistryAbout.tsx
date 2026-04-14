@@ -24,7 +24,7 @@ export function MinistryAbout() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section id="about-ministry" className="scroll-mt-24 bg-[#F8FAFC] py-20 md:py-24">
+    <section id="about" className="scroll-mt-24 bg-[#F8FAFC] py-20 md:py-24">
       <div className="mx-auto grid w-full max-w-[1280px] gap-8 px-5 sm:px-6 md:gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-12 xl:px-16">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 10 }}

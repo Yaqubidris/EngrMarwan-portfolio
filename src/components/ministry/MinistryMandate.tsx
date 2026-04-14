@@ -34,7 +34,7 @@ export function MinistryMandate() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="bg-[#F8FAFC] py-20 md:py-24">
+    <section id="mandate" className="scroll-mt-24 bg-[#F8FAFC] py-20 md:py-24">
       <div className="mx-auto grid w-full max-w-[1280px] gap-10 px-5 sm:px-6 md:gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:px-12 xl:px-16">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 10 }}

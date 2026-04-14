@@ -1,24 +1,67 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 const NAV_ITEMS = [
-  { label: "Home", href: "#home" },
-  { label: "About Ministry", href: "#about-ministry" },
+  { label: "Home", href: "#hero", sectionId: "hero" },
+  { label: "About Ministry", href: "#about", sectionId: "about" },
+  { label: "Mandate", href: "#mandate", sectionId: "mandate" },
   { label: "Projects", href: "#projects" },
+  { label: "Impact", href: "#impact", sectionId: "impact" },
+  { label: "Blueprint", href: "#blueprint", sectionId: "blueprint" },
   { label: "Departments", href: "#departments" },
   { label: "News", href: "#news" },
   { label: "Contact", href: "#contact" },
-];
+] as const;
 
 const LOGO_PATH = "/images/ministry/kano-logo.png";
 
 export function MinistryNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [logoError, setLogoError] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
   const reduceMotion = useReducedMotion();
+  const sectionIds = useMemo(
+    () => NAV_ITEMS.map((item) => item.sectionId ?? item.href.replace("#", "")),
+    [],
+  );
+
+  useEffect(() => {
+    const visibilityMap = new Map<string, number>();
+    const sectionElements = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el));
+
+    if (!sectionElements.length) {
+      return;
+    }
+
+    sectionElements.forEach((section) => visibilityMap.set(section.id, 0));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          visibilityMap.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
+        });
+
+        const sorted = Array.from(visibilityMap.entries()).sort((a, b) => b[1] - a[1]);
+        const [mostVisibleSection, ratio] = sorted[0] ?? [];
+        if (mostVisibleSection && ratio > 0.16) {
+          setActiveSection((prev) => (prev === mostVisibleSection ? prev : mostVisibleSection));
+        }
+      },
+      {
+        root: null,
+        rootMargin: "-96px 0px -45% 0px",
+        threshold: [0.1, 0.2, 0.35, 0.5, 0.7],
+      },
+    );
+
+    sectionElements.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [sectionIds]);
 
   return (
     <motion.header
@@ -28,7 +71,7 @@ export function MinistryNavbar() {
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
       <div className="mx-auto flex h-[4.5rem] w-full max-w-[1280px] items-center justify-between px-5 sm:px-6 lg:px-12 xl:px-16">
-        <a href="#home" className="flex items-center gap-3">
+        <a href="#hero" className="flex items-center gap-3">
           <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-[#103B2E]/8 ring-1 ring-[#103B2E]/15">
             {!logoError ? (
               <Image
@@ -60,9 +103,21 @@ export function MinistryNavbar() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-2 text-[11px] font-medium uppercase tracking-[0.11em] text-[#1F2937]/75 transition-colors duration-300 hover:text-[#103B2E]"
+              aria-current={activeSection === (item.sectionId ?? item.href.replace("#", "")) ? "page" : undefined}
+              className={`group relative rounded-md px-3 py-2 text-[11px] uppercase tracking-[0.11em] transition-all duration-300 ${
+                activeSection === (item.sectionId ?? item.href.replace("#", ""))
+                  ? "font-semibold text-[#0F3D2E]"
+                  : "font-medium text-slate-600 hover:text-[#0F3D2E]"
+              }`}
             >
               {item.label}
+              <span
+                className={`pointer-events-none absolute bottom-1.5 left-3 h-[1.5px] bg-[#C8A95B] transition-all duration-300 ${
+                  activeSection === (item.sectionId ?? item.href.replace("#", ""))
+                    ? "w-[calc(100%-1.5rem)] opacity-100"
+                    : "w-0 opacity-0 group-hover:w-[calc(100%-1.5rem)] group-hover:opacity-70"
+                }`}
+              />
             </a>
           ))}
         </nav>
@@ -100,7 +155,12 @@ export function MinistryNavbar() {
               <li key={`${item.href}-mobile`}>
                 <a
                   href={item.href}
-                  className="block rounded-md px-2 py-2.5 text-sm text-[#1F2937]/82 transition-colors duration-300 hover:bg-[#103B2E]/5 hover:text-[#103B2E]"
+                  aria-current={activeSection === (item.sectionId ?? item.href.replace("#", "")) ? "page" : undefined}
+                  className={`block rounded-md px-2 py-2.5 text-sm transition-colors duration-300 ${
+                    activeSection === (item.sectionId ?? item.href.replace("#", ""))
+                      ? "bg-[#0F3D2E]/6 font-semibold text-[#0F3D2E]"
+                      : "text-slate-700 hover:bg-[#103B2E]/5 hover:text-[#103B2E]"
+                  }`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.label}

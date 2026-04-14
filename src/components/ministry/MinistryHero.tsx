@@ -14,8 +14,8 @@ export function MinistryHero() {
 
   return (
     <section
-      id="home"
-      className="relative overflow-hidden bg-[#103B2E] text-white md:min-h-[74vh] lg:min-h-[78vh]"
+      id="hero"
+      className="scroll-mt-24 relative overflow-hidden bg-[#103B2E] text-white md:min-h-[74vh] lg:min-h-[78vh]"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_32%,rgba(200,169,91,0.18),transparent_42%),linear-gradient(140deg,#103B2E_0%,#1B5A45_100%)]" />
       <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.25)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.25)_1px,transparent_1px)] [background-size:36px_36px]" />
@@ -48,7 +48,7 @@ export function MinistryHero() {
               View Ongoing Projects
             </a>
             <a
-              href="#about-ministry"
+              href="#about"
               className="inline-flex items-center justify-center rounded-xl border border-white/30 bg-white/8 px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white/14"
             >
               Explore the Ministry

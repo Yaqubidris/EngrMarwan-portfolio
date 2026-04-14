@@ -9,7 +9,10 @@ export function MinistryBlueprintSection() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden py-24 text-center md:py-28">
+    <section
+      id="blueprint"
+      className="scroll-mt-24 relative flex items-center justify-center overflow-hidden py-24 text-center md:py-28"
+    >
       <div className="absolute inset-0">
         <Image
           src={BLUEPRINT_BACKGROUND}

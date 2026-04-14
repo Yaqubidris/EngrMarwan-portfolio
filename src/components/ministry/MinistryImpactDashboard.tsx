@@ -74,7 +74,7 @@ export function MinistryImpactDashboard() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section id="impact-dashboard" className="scroll-mt-24 bg-[#F8FAFC] py-20 md:py-24">
+    <section id="impact" className="scroll-mt-24 bg-[#F8FAFC] py-20 md:py-24">
       <div className="mx-auto w-full max-w-[1280px] px-5 sm:px-6 lg:px-12 xl:px-16">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 10 }}
